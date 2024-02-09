@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <title>Side B</title>
+    <meta
+      name="description"
+      content="For all interests on the side."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="https://use.typekit.net/pjo4see.css" />
+    <style>
+      body {
+        margin: 0;
+        padding: 2em;
+        font-family: ibm-plex-mono, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 12px;
+        line-height: 1.2;
+        filter: url(#analogue);
+        background-color: #f3f4f1;
+      }
+      figure {
+        margin: 0 0 1em 0;
+        user-select: none;
+      }
+      h1,
+      h2,
+      h3,
+      p {
+        padding: 0;
+        margin: 0;
+        font-size: 1em;
+        font-weight: normal;
+      }
+      h1 {
+        margin: 0 0 1em 0;
+      }
+      a {
+        color: #000;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      ul li {
+        display: flex;
+      }
+      ul li:before {
+        content: "⮑";
+        margin: 0 0.5em 0 0;
+      }
+      ul li a {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        min-width: 0;
+      }
+      address {
+        font-style: normal;
+      }
+      header,
+      main,
+      footer {
+        width: 30em;
+        max-width: 100%;
+      }
+      header:after,
+      main:after {
+        content: "--";
+        display: block;
+        margin: 2em 0;
+      }
+      article {
+        margin: 2em 0;
+      }
+      article h3 {
+        display: inline-block;
+        margin-bottom: 0.5em;
+        font-style: italic;
+      }
+      article h3:after {
+        content: ", ";
+      }
+      article p {
+        margin-bottom: 0.5em;
+      }
+      footer {
+        margin: 0 0 2em 0;
+      }
+      footer li {
+        display: inline;
+      }
+      footer li::before {
+        display: none;
+      }
+      footer address {
+        margin: 1em 0;
+      }
+    </style>
+     </head>
+  <body>
+    <header>
+      <figure>//</figure>
+      <h1>
+        All interests on the side.
+    </header>
+    <main>
+      <h2>Items</h2>
+      <article>
+        <h3>Ranger</h3>
+        <time datetime="2022">2022</time>
+        <p>
+          饮酒 星海辽阔
+          饮酒 山野沉默
+          纵马 疾驰 乘风
+          音乐 如泼墨
+          你听见了吗，我的静默
+          灯火 远方 城市
+          转身擦肩而过
+        <p>
+        <p>
+          无边的黑暗是虚构的吗
+          深处的恐惧也没有来由吗
+          舌尖的血你还能分辨吗
+          且饮酒 咽下所有的回答
+        <p>
+        <p>
+          昼夜 马匹嘶鸣
+          昼夜 杳无踪影
+          烟消 云散 大梦
+          决意 驾马不停
+          你还在乎吗，我的身影
+          北方风声 来耳边
+          下马洗耳恭听
+        </p>
+      </article>
+          </main>
+    <footer>
+      <ul>
+        <li>
+          <a href="//www.instagram.com/zonglinka.liu/o">Instagram</a>
+        </li>
+      </ul>
+      <p>Zonglin Liu</p>
+    </footer>
+    <svg>
+      <defs>
+        <filter id="analogue">
+          <feTurbulence
+            type="fractalNoise"
+            baseFrequency="0.001 0.001"
+            numOctaves="8"
+            result="grit"
+          ></feTurbulence>
+          <feGaussianBlur
+            in="SourceGraphic"
+            stdDeviation="0.2"
+            result="blur"
+          ></feGaussianBlur>
+          <feDisplacementMap
+            in="blur"
+            in2="grit"
+            scale="16"
+          ></feDisplacementMap>
+        </filter>
+      </defs>
+    </svg>
+  </body>
+</html>
