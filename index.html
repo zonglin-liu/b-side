@@ -69,6 +69,19 @@
         display: none;
       }
     </style>
+    <style>
+      figure#play-button {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+      }
+    
+      figure#play-button img {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
      </head>
   <body>
     <header>
@@ -105,6 +118,11 @@
           北方风声 来耳边
           下马洗耳恭听
         </p>
+        <audio id="audio-player" src="ranger.mp3"></audio>
+        <figure id="play-button" onclick="toggleAudio()">
+          <img src="path/to/triangle-icon.svg" alt="Play Button">
+        </figure>
+        
       </article>
           </main>
     <footer>
@@ -115,5 +133,17 @@
       </ul>
       <p>Zonglin Liu</p>
     </footer>
+    <script>
+      var audio = document.getElementById("audio-player");
+      var playButton = document.getElementById("play-button");
+    
+      function toggleAudio() {
+        if (audio.paused) {
+          audio.play();
+        } else {
+          audio.pause();
+        }
+      }
+    </script>
   </body>
 </html>
